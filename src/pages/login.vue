@@ -114,7 +114,6 @@ const rememberMe = ref(false)
 .page-column {
   margin-top: 123px;
   margin-bottom: 80px;
-  font-family: 'Lato';
   font-size: 16px;
   color: #374151;
   align-items: center;
@@ -185,7 +184,9 @@ const rememberMe = ref(false)
     gap: 12px;
     align-items: center;
   }
-
+  :deep(.v-btn__content) {
+    text-transform: none;
+  }
 }
 </style>
 
